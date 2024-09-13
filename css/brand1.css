@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+
+body{line-height: 1.5;}
+
+h2{font-family: "Prata", serif; font-size: 80px; font-weight: 100; line-height: 1.5;}
+h3{font-size: 24px;}
+h4{font-size: 18px;}
+p{font-weight: 500;}
+
+
+
+.lnb{padding-top: 100px; position: relative;}
+.lnb .inner{position: relative;}
+.lnb .lnb_li {display: flex; justify-content: center; gap: 50px; padding-right: 7%;}
+.lnb .lnb_li li>a{font-size: 20px; transition: all 0.5s;}
+.lnb .lnb_li li:hover>a{font-size: 20px; font-weight: 700;}
+.lnb .lnb_li li.on>a{font-weight: 700;}
+.lnb .lnb_tit{position: absolute; right: 250px; top: 0;}
+.lnb::after{content: ''; background: url('../images/sub/arrow_d.png')no-repeat center; width: 15px; height: 15px; position: absolute; bottom: 5px; right: 310px; cursor: pointer;}
+.lnb .lnb_tit li.on{font-size: 22px; font-weight: 400;}
+
+
+
+
+/* mv */
+
+.mv{padding: 180px 0 500px 320px; background: url('../images/sub/line.png')no-repeat left 50% bottom 0 ;}
+.mv h2{padding-bottom: 80px;}
+.mv p{padding: 45px 0 145px; font-size: 18px; }
+
+
+
+/* phil */
+.philosophy{padding: 40px 0 650px; position: relative; background: url('../images/sub/line.png') no-repeat left 50% bottom 0 ; }
+.philosophy::before{content: ''; background: #F1DEBE; width: 87%; height: 1340px; position: absolute; top: 525px; right: 0; z-index: -1;}
+.philosophy h2{text-align: center; padding-bottom: 100px;}
+.philosophy .phil1{display: flex; justify-content: center; gap: 150px; }
+.philosophy .phil1 h3{font-weight: 700; padding-top: 70px;}
+.philosophy .phil1 p{padding: 30px 0 120px; font-size: 18px;}
+.philosophy .phil2{padding-top: 260px; display: flex; gap: 80px;  justify-content: flex-start;}
+.philosophy .phil2 h3{padding: 10px 0 60px;}
+
+
+
+
+/* store */
+.store{padding: 30px 0 380px;}
+.store h2{text-align: center;}
+.store .inner{display: flex; padding: 150px 0 300px; gap: 80px ;}
+.store .store_txt{padding-top: 240px; width: 580px;}
+.store .store_txt h3{word-break: keep-all;}
+.store .store_txt h4{padding: 40px 0; font-weight: 500;}
+.store .store_txt p{font-weight: 200; font-size: 18px; padding-bottom: 70px;}
+
+
+.store .store_li{width: 90vw; margin-left: 0;}
+.store .store_li ul li{position: relative;}
+.store .store_li ul li img{width: 100%; display: block;}
+.store .store_li ul li p{text-align: center; font-size: 18px; position: absolute; top: 0; left: 0; background: rgba(0,0,0,0.5); width: 100%; height: 100%; padding-top: 100px; color: #fff; opacity:0; transition: all 0.5s;}
+.store .store_li ul li:hover p{opacity:1;}
+
+
+
+
