@@ -1,12 +1,25 @@
 @charset "utf-8";
 
 
-body{line-height: 1.5;}
+/* body{line-height: 1.5;} */
+
 
 h2{font-family: "Prata", serif; font-size: 80px; font-weight: 100; line-height: 1.5;}
 h3{font-size: 24px;}
 h4{font-size: 18px;}
 p{font-weight: 500;}
+
+@media(max-width:1200px){
+  h3{ word-break:keep-all;}
+  h4{word-break: keep-all;}
+ 
+}
+@media(max-width:768px){
+ h2{font-size: 60px;}
+ 
+}
+
+
 
 
 
@@ -16,9 +29,22 @@ p{font-weight: 500;}
 .lnb .lnb_li li>a{font-size: 20px; transition: all 0.5s;}
 .lnb .lnb_li li:hover>a{font-size: 20px; font-weight: 700;}
 .lnb .lnb_li li.on>a{font-weight: 700;}
-.lnb .lnb_tit{position: absolute; right: 250px; top: 0;}
-.lnb::after{content: ''; background: url('../images/sub/arrow_d.png')no-repeat center; width: 15px; height: 15px; position: absolute; bottom: 5px; right: 310px; cursor: pointer;}
-.lnb .lnb_tit li.on{font-size: 22px; font-weight: 400;}
+
+/* .lnb .lnb_tit{position: absolute; right: 250px; top: 0; height: 10%;}
+.lnb .lnb_tit::after{content: ''; background: url('../images/sub/arrow_d.png')no-repeat center; width: 15px; height: 15px; position: absolute; bottom: -20px; right: 65px; cursor: pointer;}
+
+.lnb .lnb_tit li.on{font-size: 22px; font-weight: 400;} */
+
+
+@media(max-width:1200px){
+ 
+  
+  
+}
+@media(max-width:768px){
+  .lnb{display: none;}
+  
+}
 
 
 
@@ -28,6 +54,13 @@ p{font-weight: 500;}
 .mv{padding: 180px 0 500px 320px; background: url('../images/sub/line.png')no-repeat left 50% bottom 0 ;}
 .mv h2{padding-bottom: 80px;}
 .mv p{padding: 45px 0 145px; font-size: 18px; }
+
+@media(max-width:768px){
+  .mv{padding: 180px 8% 500px;}
+  .mv h2{padding-bottom: 40px;}
+  
+  
+}
 
 
 
@@ -39,16 +72,27 @@ p{font-weight: 500;}
 .philosophy .phil1 h3{font-weight: 700; padding-top: 70px;}
 .philosophy .phil1 p{padding: 30px 0 120px; font-size: 18px;}
 .philosophy .phil2{padding-top: 260px; display: flex; gap: 80px;  justify-content: flex-start;}
-.philosophy .phil2 h3{padding: 10px 0 60px;}
+.philosophy .phil2 h3{padding: 10px 0 60px ; }
 
+@media(max-width:1200px){
+  .philosophy::before{width: 100%;}
+  .philosophy .phil1{gap: 50px; }
+  .philosophy .phil2{display: block;}
+}
 
+@media(max-width:768px){
+  .philosophy .phil1{flex-wrap: wrap; gap: 0; justify-content: flex-start;}
+  .philosophy .phil1 .phil_txt{order: 2;}
+  .philosophy .phil1 p{padding: 20px 0 60px; ;}
+  
+}
 
 
 /* store */
 .store{padding: 30px 0 380px;}
 .store h2{text-align: center;}
 .store .inner{display: flex; padding: 150px 0 300px; gap: 80px ;}
-.store .store_txt{padding-top: 240px; width: 580px;}
+.store .store_txt{padding-top: 240px; width: 580px;padding-right: 8%;}
 .store .store_txt h3{word-break: keep-all;}
 .store .store_txt h4{padding: 40px 0; font-weight: 500;}
 .store .store_txt p{font-weight: 200; font-size: 18px; padding-bottom: 70px;}
@@ -59,6 +103,19 @@ p{font-weight: 500;}
 .store .store_li ul li img{width: 100%; display: block;}
 .store .store_li ul li p{text-align: center; font-size: 18px; position: absolute; top: 0; left: 0; background: rgba(0,0,0,0.5); width: 100%; height: 100%; padding-top: 100px; color: #fff; opacity:0; transition: all 0.5s;}
 .store .store_li ul li:hover p{opacity:1;}
+
+@media(max-width:1200px){
+  .store .inner{ padding: 150px 0 300px; gap: 50px ;}
+  .store .inner img{width: 50%;}
+}
+@media(max-width:768px){
+  .store{padding: 30px 0 250px;}
+  .store .inner{justify-content: center;padding: 100px 0 150px;}
+  .store  .inner .store_txt{padding: 0px;}
+  .store .inner img{display: none;}
+  .store .store_txt h4{word-break: break-all; }
+  .store .store_txt p{padding-bottom: 70px; word-break: break-all;}
+}
 
 
 

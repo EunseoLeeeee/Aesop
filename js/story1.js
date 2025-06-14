@@ -20,17 +20,17 @@ $(document).ready(function () {
         },
         centeredSlides: false,
         loop: true,
-        slidesPerView: 4,
+        slidesPerView: 2.5,
         spaceBetween: 30,
 
-        /*    breakpoints: {
+           breakpoints: {
                768: {
-                   slidesPerView: 2.5,
-                   spaceBetween: 40,
+                   slidesPerView: 4,
+                   spaceBetween: 30,
                },
                1200: {
-                   slidesPerView: 3,
-                   spaceBetween: 40,
+                   slidesPerView: 4,
+                   spaceBetween: 30,
                },
            },
        
@@ -41,16 +41,18 @@ $(document).ready(function () {
                el: ".swiper-scrollbar",
                hide: false,
            },
-        */
+        
 
     });
 
 
-    $(".lnb .lnb_tit .on").show().siblings().hide();
+    // $(".lnb .lnb_tit .on").show().siblings().hide();
 
-    $("lnb .lnb_tit .on").click(function () {
-        $(".lnb .lnb_tit li").fadeIn();
-    });
+    // $(".lnb .lnb_tit .on").hover(function () {
+    //     $(".lnb .lnb_tit li").fadeToggle();
+    // });
+
+    
     //수정해야함 
 
 

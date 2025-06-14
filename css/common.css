@@ -5,7 +5,7 @@ body{color:#000; line-height: 1.5; font-size: 100%; font-family: 'pretendard', s
 .inner{max-width: 1700px; margin:  auto; }
 
 @media(max-width:1200px){
-  .inner{padding: 0 8%; }
+  .inner{padding: 0 8%; margin: auto;}
 
 }
 
@@ -31,11 +31,11 @@ body{color:#000; line-height: 1.5; font-size: 100%; font-family: 'pretendard', s
 
 nav{position: fixed; width: 100%; background: #fff;height: 100%; top: 0; padding: 50px; z-index: 20; text-align: center; }
 
-nav .util_m{display: flex; position: absolute;  gap: 20px; width: 100px; opacity: 0; left: 50%; transform: translateX(-50%);}
+.util_m{  display: none; position: absolute;right: 50%; width: 120px; height: auto; transform: translateX(50%);}
+/* .util_m li{width: calc((100% - 30px) / 2); } */
+.util_m li>a img{display: block; width: 200%;}
 
-nav .util_m li a{display: block;}
-
-nav img{position: absolute; bottom: -30px; left: 0;}
+nav .logo_deco{position: absolute; bottom: -30px; left: 0;}
 
 .gnb{display: flex; gap: 40px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -70%); }
 .gnb>li{ width: 180px;}
@@ -60,7 +60,7 @@ nav img{position: absolute; bottom: -30px; left: 0;}
 }
 
 @media(max-width:768px){
-  nav .util_m{opacity: 1;}
+  nav .util_m{display: flex; gap: 50px; justify-content: center;}
   .gnb{display: block; left: 50%;  top: 50%; }
   .gnb>li{width: 300px; padding-bottom: 20px; }
   .gnb>li>a{padding: 10px 20px;  transition: all 0.5s; border-radius: 50%; font-size: 28px;  }
